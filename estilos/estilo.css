@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+/*mobile view*/
+
+
+@media (min-width: 480px){
+
+html{
+    font-size: 62.5%;
+}
+
+#grilla{
+    width: 100%;
+    height: 100vh;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "productos"
+      "servicios"
+      "footer";
+    grid-template-rows:auto 1fr 2fr; 
+    grid-template-columns: 2fr;
+ }
+
+ header {
+    grid-area: header;
+    background-color: rgb(252, 138, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1.5px;
+    border-style: solid;
+    border-color: black;
+ }
+
+ footer {
+    grid-area: footer;
+    color: black;
+    font-weight: lighter;
+    padding: 20px;
+ }
+
+ section#productos {
+    grid-area: productos;     
+ }
+
+ section#servicios {
+    grid-area: servicios;     
+ }
+
+body{
+   
+    background-image: url(../img/backgroundWeb.jpg);
+    
+}
+
+section h1{
+    color: firebrick;
+    font-weight: lighter;
+    font-style: inherit;
+    font-size: 6em;
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+    font-style: oblique;
+    font-size: 3em;
+}
+#tipografia{
+    font-style: inherit;
+    font-size: 3em;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+
+a{
+    text-decoration: none;
+    font-size: 3em;
+    font-style: inherit;
+    color: black;
+ 
+}
+
+
+nav ul li{
+    display: flex;
+    margin: 50px 5px;
+    padding: 20px 60px 10px 60px;
+    justify-content: space-between;
+    flex-direction: row;
+    display: inline;
+    font-size: 1,5em;
+ 
+}
+
+p {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2em;
+    font-family: 'Oxygen', sans-serif;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.foot{
+    font-size: 1,5em;
+    justify-content: center;
+}
+
+img{
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+    border: inset 10px red;
+}
+
+img:hover{
+    transform: scale(1.5);
+    transition: 1.2s;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+}
+
+@media(min-width: 768px){
+
+    #grilla {
+        display: grid;
+        grid-template-areas:
+          "header"
+          "productos"
+          "servicios"
+          "footer";
+        grid-template-rows:auto 1fr 2fr; 
+        grid-template-columns: 2fr;
+     }
+
+}
+
+/*desktop view*/
+@media(min-width:1024px) {
+ 
+
+ 
+
+    #grilla {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "productos productos"
+          "servicios servicios"
+          "footer footer";
+        grid-template-rows:auto 1fr 2fr; 
+        grid-template-columns: 2fr auto;
+     }
+    
+    
+
+}
