@@ -79,6 +79,31 @@ img:hover {
   justify-content: center;
 }
 
+#footdiv {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.btn--instagram {
+  background-color: #C25e30;
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+}
+
+.btn--facebook {
+  background-color: #3a5795;
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+}
+
+#botonred {
+  padding: 1%;
+  border-radius: 10%;
+}
+
 /*mobile view*/
 @media (min-width: 480px) {
   #grilla {
