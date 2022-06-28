@@ -69,11 +69,20 @@ p {
     justify-content: center;
 }
 
+.divImagen {
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+    }
+
+
 img{
     display: flex;
     margin: 50px auto;
     justify-content: center;
     border: inset 10px red;
+    width: 100%;
+    height: auto;
         &:hover{
             transform: scale(1.5);
             transition: 1.3s;
