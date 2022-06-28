@@ -43,13 +43,12 @@ section h1{
 h2{
     color: rgb(0, 0, 0);
     font-weight: lighter;
-    font-style: oblique;
+    font-style: inherit;
     font-size: 3em;
 }
 
 #tipografia{
-    font-style: inherit;
-    font-size: 3em;
+   @extend h2
 }
 
 
@@ -74,8 +73,7 @@ p {
     max-width: 960px;
     margin: 0 auto;
     }
-
-
+ 
 img{
     display: flex;
     margin: 50px auto;
@@ -89,7 +87,6 @@ img{
         }
  }
 
- 
 
 
 .video{
@@ -133,3 +130,4 @@ $redes: (
     padding: 1%;
     border-radius: 10%;
 }
+
